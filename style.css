@@ -1,3 +1,155 @@
-body{
-    background-color: aqua;
+@font-face {
+    font-family: Norse-Bold;
+    src: url(external_files/Norse-Bold.otf);
+  }
+
+*{
+    font-family:  'Segoe UI',  Tahoma,Geneva,Verdana, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    --color-create-button: #596D48;
+    --color-input-border: #E5E7EB;
 }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(29, 29, 29);
+}
+
+.form-container{
+    display: flex;
+    width: 85vw;
+    height: 70vh; 
+    margin: auto;
+    max-width: 1500px;
+}
+
+.logo-text{
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 90px;
+    padding: 0px;
+    margin: 0;
+}
+
+#logo-background{
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/background.jpg");
+    height: inherit;
+    width: 40%;
+    background-size: cover;
+    border-radius: 30px 0 0 30px;
+}
+#logo-background div{    
+    display: flex;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    margin-top: 30%;
+    background-color: rgba(0,0,0,50%);
+}
+#logo-background div img{
+    width: auto; /* you can use % */
+    height: 100px;
+}
+
+#photo-credit{
+    margin: auto auto 10px auto;
+    align-self: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+
+    background-color: rgb(235, 235, 235);
+    border-radius: 0 30px 30px 0;
+}
+
+
+.form > div{
+    padding-left: 20px;
+    padding-right: 20%;
+
+}
+
+.form > div:first-child{
+    font-weight: bold;
+}
+
+.form >div:nth-child(2){
+    background-color: white;
+    padding-bottom: 3%;
+    box-shadow: 0 10px 10px -10px gray;
+}
+.form div:nth-child(2) p{
+    font-weight: bolder;
+}
+
+.form >div:last-child{
+    margin-top:3%;   
+}
+
+form label{
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.form-group{
+    display: inline-block;
+    width: 47%;
+    margin-top: 10px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-group input{
+    width: 70%;
+    border-radius: 5px;
+    border-color: var(--color-input-border);
+    border-width: 1px;
+}
+
+#lname{
+    border-color: blue;
+    box-shadow: 0px 0px 5px blue;
+}
+
+button{
+    background-color: var(--color-create-button);
+    color:white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-width: 1px;
+}
+
+a{
+    color: var(--color-create-button);
+    text-decoration: none;
+}
+
+#pwd, #cpwd{
+    border-color:red;
+    
+}
+
+
+
+

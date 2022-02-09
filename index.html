@@ -6,10 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
-    Hello world
-    Photo by Halie West on Unsplash
+    <div class="form-container">
+        <div id="logo-background">
+            <div>
+                <img src="images/odin-lined.png" alt="odin logo">
+                <p class="logo-text">Odin</p>
+            </div> 
+            <p id="photo-credit">Photo by Halie West on Unsplash</p>
+        </div>
+        <div class="form">
+            <div>
+                <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </p>
+                <p>
+                    You <em>know</em> you want to.
+                </p>
+        
+            </div>
+            <div>
+                <p>Let's do this!</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname"> 
+                    </div>
+                    
+                    <div class="form-group focus">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone">  
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pwd">Password</label>
+                        <input type="password" id="pwd" name="pwd">  
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpwd">confirm-password</label>
+                        <input type="password" id="cpwd" name="cpwd">
+                    </div>
+
+                </form>
+            </div>
+            <div>
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>
